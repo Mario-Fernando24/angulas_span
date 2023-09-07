@@ -14,8 +14,11 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 //Routes
 import { APP_ROUTERS } from './app.routes'; // Asegúrate de que la ruta sea correcta
 
-@NgModule({
+//Servicios
+import { HeroesServiceTsService } from './servicios/heroes.service.ts.service';
+import { HeroesDetalleComponent } from './components/heroes-detalle/heroes-detalle.component';
 
+@NgModule({
 
 
   declarations: [
@@ -23,14 +26,19 @@ import { APP_ROUTERS } from './app.routes'; // Asegúrate de que la ruta sea cor
     NavbarComponent,
      HomeComponent,
      AboutComponent,
-     HeroesComponent
+     HeroesComponent,
+     HeroesDetalleComponent
   ],
   imports: [
+    //RUTAS
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(APP_ROUTERS), // Importa las rutas aquí
   ],
-  providers: [],
+  providers: [
+    //TODOS NUESTROS SERVICIOS
+    HeroesServiceTsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
