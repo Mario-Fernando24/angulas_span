@@ -18,7 +18,6 @@ export class HeroesDetalleComponent {
       this.activatedRoute.params.subscribe( params => {
               this.heroe = this._heroesService.getDetalleHeroe(params['id']);
       })
-
     }
   
 }
