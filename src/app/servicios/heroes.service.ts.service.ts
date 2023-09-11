@@ -79,7 +79,11 @@ export class HeroesServiceTsService {
         heroesArr.push(heroes)
       }
     }
-
+    
+    console.log("===========================");
+    console.log(heroesArr);
+    console.log("===========================");
+    
     return heroesArr;
 
   }

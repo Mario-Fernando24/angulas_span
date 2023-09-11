@@ -17,6 +17,7 @@ import { APP_ROUTERS } from './app.routes'; // Asegúrate de que la ruta sea cor
 //Servicios
 import { HeroesServiceTsService } from './servicios/heroes.service.ts.service';
 import { HeroesDetalleComponent } from './components/heroes-detalle/heroes-detalle.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
 
@@ -27,7 +28,8 @@ import { HeroesDetalleComponent } from './components/heroes-detalle/heroes-detal
      HomeComponent,
      AboutComponent,
      HeroesComponent,
-     HeroesDetalleComponent
+     HeroesDetalleComponent,
+     BuscadorComponent
   ],
   imports: [
     //RUTAS
