@@ -12,7 +12,10 @@
 
 
 <div class="row row-cols-1 row-cols-md-4 g-4">
-    <div class="col" *ngFor="let item of heroes; let i = index">
+
+    <app-heroe-tarjeta [heroe]="item" [index]="i" *ngFor="let item of heroes; let i = index"></app-heroe-tarjeta>
+
+    <!-- <div class="col" *ngFor="let item of heroes; let i = index">
         <div class="card animated fadeIn fast">
             <img src="{{ item.img }}" class="card-img-top" [alt]="item.nombre">
             <div class="card-body">
@@ -23,10 +26,10 @@
                     <button type="button" class="btn btn-outline-primary btn-block">
                         Ver más...
                     </button>
-                    <!-- <a [routerLink]="['x/heroesDetalle', i]" class="btn btn-outline-primary">ver más link...</a> -->
+                     <a [routerLink]="['x/heroesDetalle', i]" class="btn btn-outline-primary">ver más link...</a> 
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 </div>
