@@ -13,7 +13,7 @@
 
 <div class="row row-cols-1 row-cols-md-4 g-4">
 
-    <app-heroe-tarjeta [heroe]="item" [index]="i" *ngFor="let item of heroes; let i = index"></app-heroe-tarjeta>
+    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="item" [index]="item.idx" *ngFor="let item of heroes; let i = index"></app-heroe-tarjeta>
 
     <!-- <div class="col" *ngFor="let item of heroes; let i = index">
         <div class="card animated fadeIn fast">
